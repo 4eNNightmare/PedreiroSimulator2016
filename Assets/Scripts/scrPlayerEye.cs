@@ -23,7 +23,7 @@ public class scrPlayerEye : MonoBehaviour
         xRot -= Input.GetAxis("Mouse Y") * lookSensivity;
         yRot += Input.GetAxis("Mouse X") * lookSensivity;
 
-        xRot = Mathf.Clamp(xRot, -40f, 40f);
+        xRot = Mathf.Clamp(xRot, -70f, 70f);
         //yRot = Mathf.Clamp(yRot, -70f, 70f);
         eye.transform.rotation = Quaternion.Euler(xRot, yRot, 0);
 
@@ -31,14 +31,14 @@ public class scrPlayerEye : MonoBehaviour
         {
             if (Cursor.lockState == CursorLockMode.Locked)
             {
-                Cursor.lockState = CursorLockMode.None;
+				Cursor.lockState = CursorLockMode.None;
             }
             else
             {
                 Cursor.lockState = CursorLockMode.Locked;
             }
+			Cursor.visible = true;
         }
-        //Cursor.lockState = CursorLockMode.Locked;
         
     }
 }
