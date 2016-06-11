@@ -13,6 +13,10 @@ public class scrPlayer : MonoBehaviour
     //My Comps
     private Rigidbody rb;
 
+    //Public Vars
+    public static bool isCarrying;
+    public static float mySpd;
+
     void Awake()
     {
         //Load Comps
@@ -23,7 +27,7 @@ public class scrPlayer : MonoBehaviour
     {
         Movement();
 
-
+        ExternalVars();
     }
 
     void Movement()
@@ -53,5 +57,10 @@ public class scrPlayer : MonoBehaviour
         }
 
 
+    }
+
+    void ExternalVars()
+    {
+        mySpd = rb.velocity.magnitude;
     }
 }

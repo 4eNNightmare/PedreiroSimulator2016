@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ScrTransportableBehaviour : ScrObject {
-	public Vector3 carryPosition;
-	public float delay;
+public class ScrTransportableBehaviour : ScrObject
+{
+
+    public Vector3 carryPosition;
+	private float delay;
 	private GameObject hand;
+
+
 
 
 	void Awake () {
@@ -31,6 +35,7 @@ public class ScrTransportableBehaviour : ScrObject {
 		carryPosition = hand.transform.position;
 		transform.position = carryPosition;
 		transform.SetParent(hand.transform);
+        
 
 	}
 
@@ -38,6 +43,7 @@ public class ScrTransportableBehaviour : ScrObject {
 		GetComponent<Rigidbody>().isKinematic = false;
 		GetComponent<Rigidbody>().detectCollisions = true;
 		transform.SetParent(null);
+        
 	}
 
 	void OnMouseOver()
@@ -58,16 +64,19 @@ public class ScrTransportableBehaviour : ScrObject {
 	}
 
 
-	void Update(){
+	void Update()
+    {
 		delay += Time.deltaTime;
 		if(Input.GetMouseButtonDown(0) && hand.transform.childCount == 0 && targeted){
 			delay = 0;
 			Carry();
+            scrPlayer.isCarrying = true;
 		}
 
 		if(delay > 0.25){
 			if(Input.GetMouseButtonDown(0) && hand.transform.childCount > 0){
 				Drop();
+                scrPlayer.isCarrying = false;
 			}
 		}
 	}
