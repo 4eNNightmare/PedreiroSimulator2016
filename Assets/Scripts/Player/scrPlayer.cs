@@ -61,6 +61,13 @@ public class scrPlayer : MonoBehaviour
 
     void ExternalVars()
     {
+
+        //check item in hand
+        if (GameObject.FindGameObjectWithTag("playerHand").transform.GetChildCount() != 0)
+            isCarrying = true;
+        else
+            isCarrying = false;
+
         mySpd = rb.velocity.magnitude;
     }
 }
