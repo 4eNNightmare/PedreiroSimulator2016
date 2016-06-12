@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class scrMSG_Alert : MonoBehaviour {
+public class scrMSG_Alert : MonoBehaviour
+{
 	private Canvas c;
 	public GameObject msgBox;
 	public Vector3 msgBoxPos;
@@ -11,18 +12,15 @@ public class scrMSG_Alert : MonoBehaviour {
 	[SerializeField]private Sprite iconsAlert;
 	[SerializeField]private Sprite iconsError;
 
-	void Awake(){
+	void Awake()
+    {
 		c = GetComponent<Canvas>();
 	}
-
-	void Update () {
-		if(Input.anyKeyDown){
-			DrawMsgBox("escreva um testo", 0);
-		}
-	}
+	
 
 
-	public void DrawMsgBox(string msg, int type){
+	public void DrawMsgBox(string msg, int type)
+    {
 		GameObject instancia = Instantiate(msgBox) as GameObject;
 		instancia.transform.SetParent(c.transform);
 
