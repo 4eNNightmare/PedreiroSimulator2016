@@ -20,7 +20,6 @@ public class BrokenObject : MonoBehaviour {
         if (col.gameObject.GetComponent<Rigidbody>() != null)
         {
             velocityImpact = +col.gameObject.GetComponent<Rigidbody>().velocity.magnitude;
-            Debug.Log(velocityImpact);
         }
         if (velocityImpact > MaxImpactForce)
         {
