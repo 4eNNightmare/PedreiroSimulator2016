@@ -11,7 +11,7 @@ public class BrokenObject : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate() {
         velocityImpact = this.GetComponent<Rigidbody>().velocity.magnitude;
     }
 
