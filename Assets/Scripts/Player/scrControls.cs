@@ -17,4 +17,9 @@ public static class scrControls
     {
         return Input.GetKeyDown(KeyCode.Space);
     }
+
+    public static bool use()
+    {
+        return Input.GetKeyDown(KeyCode.E);
+    }
 }

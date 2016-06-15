@@ -27,12 +27,14 @@ public class scrGameManager:MonoBehaviour
             Debug.LogError("MONEY TEXT not set in GameManager!!!!");
         }
 
+        loadResources();
+
     }
 #endif
 
     void Start()
     {
-        loadResources();
+        
         //Start Game
         gameCanvas.GetComponent<scrMSG_Alert>().DrawMsgBox("Pegue seus equipamentos de EPI", CommonValues.INFO);
 

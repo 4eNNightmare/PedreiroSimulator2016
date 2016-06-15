@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class scrMoney : MonoBehaviour
 {
     private Text moneyText;
-    public float moneyScore = 00.00f;
+    private float moneyScore = 00.00f;
 
     void Awake()
     {
