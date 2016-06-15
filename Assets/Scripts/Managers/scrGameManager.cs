@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class scrGameManager:MonoBehaviour
 {
     public GameObject player;
     public Canvas gameCanvas;
+    public Text moneyText;
+
+    //Start the money system;
+    public scrMoney moneyManager;
 
 #if UNITY_EDITOR
     void Awake()
@@ -16,14 +21,26 @@ public class scrGameManager:MonoBehaviour
         {
             Debug.LogError("Canvas is not set in GameManager!!!");
         }
+
+        if (moneyText == null)
+        {
+            Debug.LogError("MONEY TEXT not set in GameManager!!!!");
+        }
+
     }
 #endif
 
     void Start()
     {
+        loadResources();
         //Start Game
-
         gameCanvas.GetComponent<scrMSG_Alert>().DrawMsgBox("Pegue seus equipamentos de EPI", CommonValues.INFO);
 
     }
+
+    void loadResources()
+    {
+        moneyManager = GetComponent<scrMoney>();
+    }
+
 }
