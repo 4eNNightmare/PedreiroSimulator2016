@@ -7,6 +7,7 @@ public class ScrTransportableBehaviour : ScrObject
     public Vector3 carryPosition;
 	private float delay;
 	private GameObject hand;
+	public GameObject inHandObject;
 
 
 
@@ -24,14 +25,14 @@ public class ScrTransportableBehaviour : ScrObject
 		carryPosition = hand.transform.position;
 		transform.position = carryPosition;
 		transform.SetParent(hand.transform);
-        
-
+		inHandObject = this.gameObject;
 	}
 
 	private void Drop(){
 		GetComponent<Rigidbody>().isKinematic = false;
 		GetComponent<Rigidbody>().detectCollisions = true;
 		transform.SetParent(null);
+		inHandObject = null;
         
 	}
 
@@ -53,7 +54,7 @@ public class ScrTransportableBehaviour : ScrObject
 	}
 
 
-	void Update()
+	public void Update()
     {
 		delay += Time.deltaTime;
 		if(Input.GetMouseButtonDown(0) && hand.transform.childCount == 0 && targeted){

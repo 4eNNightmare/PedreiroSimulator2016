@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class scrMSG_Alert : MonoBehaviour
+public class  scrMSG_Alert : MonoBehaviour
 {
 	private Canvas c;
 	public GameObject msgBox;
