@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: f25dc42a93d60ff429be8b291095dd26
+timeCreated: 1465960804
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.001_end
+    100008: Bone.002
+    100010: Bone.002_end
+    100012: Bone.004
+    100014: Bone.004_end
+    100016: Bone.005
+    100018: Bone.005_end
+    100020: Bone.006
+    100022: Bone.006_end
+    100024: Bone.007
+    100026: Bone.007_end
+    100028: Bone.010
+    100030: Bone.010_end
+    100032: Bone.012
+    100034: Bone.012_end
+    100036: Bone_end
+    100038: CuboPrincipal
+    100040: EscoroDoPrincipal
+    100042: PredioGrande
+    100044: predioGrande
+    100046: predioGrande2
+    100048: prediopequeno
+    100050: //RootNode
+    100052: predioTomba2
+    100054: predioTomba3
+    100056: predioTomba4
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.001_end
+    400008: Bone.002
+    400010: Bone.002_end
+    400012: Bone.004
+    400014: Bone.004_end
+    400016: Bone.005
+    400018: Bone.005_end
+    400020: Bone.006
+    400022: Bone.006_end
+    400024: Bone.007
+    400026: Bone.007_end
+    400028: Bone.010
+    400030: Bone.010_end
+    400032: Bone.012
+    400034: Bone.012_end
+    400036: Bone_end
+    400038: CuboPrincipal
+    400040: EscoroDoPrincipal
+    400042: PredioGrande
+    400044: predioGrande
+    400046: predioGrande2
+    400048: prediopequeno
+    400050: //RootNode
+    400052: predioTomba2
+    400054: predioTomba3
+    400056: predioTomba4
+    4300000: PredioGrande
+    4300002: predioGrande2
+    4300004: predioTomba2
+    4300006: predioGrande
+    4300008: predioTomba4
+    4300010: predioTomba3
+    4300012: EscoroDoPrincipal
+    4300014: CuboPrincipal
+    4300016: prediopequeno
+    7400000: Apocalipse
+    7400002: Armature|Cube.001Action
+    7400004: Armature|Cube.001Action.001
+    7400006: Armature|Cube.002Action
+    7400008: Armature|Cube.002Action.001
+    7400010: Armature|Cube.003Action
+    7400012: Armature|Cube.003Action.001
+    7400014: Armature|Cube.004Action
+    7400016: Armature|Cube.004Action.001
+    7400018: Armature|Cube.005Action
+    7400020: Armature|Cube.005Action.001
+    7400022: Armature|Cube.006Action
+    7400024: Armature|Cube.006Action.001
+    7400026: Armature|Cube.007Action
+    7400028: Armature|Cube.007Action.001
+    7400030: Armature|Cube.008Action
+    7400032: Armature|Cube.008Action.001
+    7400034: Armature|Cube.009Action
+    7400036: Armature|Cube.009Action.001
+    7400038: Armature|Cube.010Action
+    7400040: Armature|Cube.010Action.001
+    7400042: Armature|Cube.011Action
+    7400044: Armature|Cube.011Action.001
+    7400046: Armature|Cube.011Action.002
+    7400048: Armature|Cube.012Action
+    7400050: Armature|Cube.012Action.001
+    7400052: Armature|CubeAction
+    7400054: Armature|CubeAction.001
+    7400056: PredioGrande|Cube.001Action
+    7400058: PredioGrande|Cube.001Action.001
+    7400060: PredioGrande|Cube.002Action
+    7400062: PredioGrande|Cube.002Action.001
+    7400064: PredioGrande|Cube.003Action
+    7400066: PredioGrande|Cube.003Action.001
+    7400068: PredioGrande|Cube.004Action
+    7400070: PredioGrande|Cube.004Action.001
+    7400072: PredioGrande|Cube.005Action
+    7400074: PredioGrande|Cube.005Action.001
+    7400076: PredioGrande|Cube.006Action
+    7400078: PredioGrande|Cube.006Action.001
+    7400080: PredioGrande|Cube.007Action
+    7400082: PredioGrande|Cube.007Action.001
+    7400084: PredioGrande|Cube.008Action
+    7400086: PredioGrande|Cube.008Action.001
+    7400088: PredioGrande|Cube.009Action
+    7400090: PredioGrande|Cube.009Action.001
+    7400092: PredioGrande|Cube.010Action
+    7400094: PredioGrande|Cube.010Action.001
+    7400096: PredioGrande|Cube.011Action
+    7400098: PredioGrande|Cube.011Action.001
+    7400100: PredioGrande|Cube.011Action.002
+    7400102: PredioGrande|Cube.012Action
+    7400104: PredioGrande|Cube.012Action.001
+    7400106: PredioGrande|CubeAction
+    7400108: PredioGrande|CubeAction.001
+    7400110: predioGrande2|Cube.001Action
+    7400112: predioGrande2|Cube.001Action.001
+    7400114: predioGrande2|Cube.002Action
+    7400116: predioGrande2|Cube.002Action.001
+    7400118: predioGrande2|Cube.003Action
+    7400120: predioGrande2|Cube.003Action.001
+    7400122: predioGrande2|Cube.004Action
+    7400124: predioGrande2|Cube.004Action.001
+    7400126: predioGrande2|Cube.005Action
+    7400128: predioGrande2|Cube.005Action.001
+    7400130: predioGrande2|Cube.006Action
+    7400132: predioGrande2|Cube.006Action.001
+    7400134: predioGrande2|Cube.007Action
+    7400136: predioGrande2|Cube.007Action.001
+    7400138: predioGrande2|Cube.008Action
+    7400140: predioGrande2|Cube.008Action.001
+    7400142: predioGrande2|Cube.009Action
+    7400144: predioGrande2|Cube.009Action.001
+    7400146: predioGrande2|Cube.010Action
+    7400148: predioGrande2|Cube.010Action.001
+    7400150: predioGrande2|Cube.011Action
+    7400152: predioGrande2|Cube.011Action.001
+    7400154: predioGrande2|Cube.011Action.002
+    7400156: predioGrande2|Cube.012Action
+    7400158: predioGrande2|Cube.012Action.001
+    7400160: predioGrande2|CubeAction
+    7400162: predioGrande2|CubeAction.001
+    7400164: predioTomba2|Cube.001Action
+    7400166: predioTomba2|Cube.001Action.001
+    7400168: predioTomba2|Cube.002Action
+    7400170: predioTomba2|Cube.002Action.001
+    7400172: predioTomba2|Cube.003Action
+    7400174: predioTomba2|Cube.003Action.001
+    7400176: predioTomba2|Cube.004Action
+    7400178: predioTomba2|Cube.004Action.001
+    7400180: predioTomba2|Cube.005Action
+    7400182: predioTomba2|Cube.005Action.001
+    7400184: predioTomba2|Cube.006Action
+    7400186: predioTomba2|Cube.006Action.001
+    7400188: predioTomba2|Cube.007Action
+    7400190: predioTomba2|Cube.007Action.001
+    7400192: predioTomba2|Cube.008Action
+    7400194: predioTomba2|Cube.008Action.001
+    7400196: predioTomba2|Cube.009Action
+    7400198: predioTomba2|Cube.009Action.001
+    7400200: predioTomba2|Cube.010Action
+    7400202: predioTomba2|Cube.010Action.001
+    7400204: predioTomba2|Cube.011Action
+    7400206: predioTomba2|Cube.011Action.001
+    7400208: predioTomba2|Cube.011Action.002
+    7400210: predioTomba2|Cube.012Action
+    7400212: predioTomba2|Cube.012Action.001
+    7400214: predioTomba2|CubeAction
+    7400216: predioTomba2|CubeAction.001
+    7400218: predioGrande|Cube.001Action
+    7400220: predioGrande|Cube.001Action.001
+    7400222: predioGrande|Cube.002Action
+    7400224: predioGrande|Cube.002Action.001
+    7400226: predioGrande|Cube.003Action
+    7400228: predioGrande|Cube.003Action.001
+    7400230: predioGrande|Cube.004Action
+    7400232: predioGrande|Cube.004Action.001
+    7400234: predioGrande|Cube.005Action
+    7400236: predioGrande|Cube.005Action.001
+    7400238: predioGrande|Cube.006Action
+    7400240: predioGrande|Cube.006Action.001
+    7400242: predioGrande|Cube.007Action
+    7400244: predioGrande|Cube.007Action.001
+    7400246: predioGrande|Cube.008Action
+    7400248: predioGrande|Cube.008Action.001
+    7400250: predioGrande|Cube.009Action
+    7400252: predioGrande|Cube.009Action.001
+    7400254: predioGrande|Cube.010Action
+    7400256: predioGrande|Cube.010Action.001
+    7400258: predioGrande|Cube.011Action
+    7400260: predioGrande|Cube.011Action.001
+    7400262: predioGrande|Cube.011Action.002
+    7400264: predioGrande|Cube.012Action
+    7400266: predioGrande|Cube.012Action.001
+    7400268: predioGrande|CubeAction
+    7400270: predioGrande|CubeAction.001
+    7400272: predioTomba4|Cube.001Action
+    7400274: predioTomba4|Cube.001Action.001
+    7400276: predioTomba4|Cube.002Action
+    7400278: predioTomba4|Cube.002Action.001
+    7400280: predioTomba4|Cube.003Action
+    7400282: predioTomba4|Cube.003Action.001
+    7400284: predioTomba4|Cube.004Action
+    7400286: predioTomba4|Cube.004Action.001
+    7400288: predioTomba4|Cube.005Action
+    7400290: predioTomba4|Cube.005Action.001
+    7400292: predioTomba4|Cube.006Action
+    7400294: predioTomba4|Cube.006Action.001
+    7400296: predioTomba4|Cube.007Action
+    7400298: predioTomba4|Cube.007Action.001
+    7400300: predioTomba4|Cube.008Action
+    7400302: predioTomba4|Cube.008Action.001
+    7400304: predioTomba4|Cube.009Action
+    7400306: predioTomba4|Cube.009Action.001
+    7400308: predioTomba4|Cube.010Action
+    7400310: predioTomba4|Cube.010Action.001
+    7400312: predioTomba4|Cube.011Action
+    7400314: predioTomba4|Cube.011Action.001
+    7400316: predioTomba4|Cube.011Action.002
+    7400318: predioTomba4|Cube.012Action
+    7400320: predioTomba4|Cube.012Action.001
+    7400322: predioTomba4|CubeAction
+    7400324: predioTomba4|CubeAction.001
+    7400326: predioTomba3|Cube.001Action
+    7400328: predioTomba3|Cube.001Action.001
+    7400330: predioTomba3|Cube.002Action
+    7400332: predioTomba3|Cube.002Action.001
+    7400334: predioTomba3|Cube.003Action
+    7400336: predioTomba3|Cube.003Action.001
+    7400338: predioTomba3|Cube.004Action
+    7400340: predioTomba3|Cube.004Action.001
+    7400342: predioTomba3|Cube.005Action
+    7400344: predioTomba3|Cube.005Action.001
+    7400346: predioTomba3|Cube.006Action
+    7400348: predioTomba3|Cube.006Action.001
+    7400350: predioTomba3|Cube.007Action
+    7400352: predioTomba3|Cube.007Action.001
+    7400354: predioTomba3|Cube.008Action
+    7400356: predioTomba3|Cube.008Action.001
+    7400358: predioTomba3|Cube.009Action
+    7400360: predioTomba3|Cube.009Action.001
+    7400362: predioTomba3|Cube.010Action
+    7400364: predioTomba3|Cube.010Action.001
+    7400366: predioTomba3|Cube.011Action
+    7400368: predioTomba3|Cube.011Action.001
+    7400370: predioTomba3|Cube.011Action.002
+    7400372: predioTomba3|Cube.012Action
+    7400374: predioTomba3|Cube.012Action.001
+    7400376: predioTomba3|CubeAction
+    7400378: predioTomba3|CubeAction.001
+    7400380: EscoroDoPrincipal|Cube.001Action
+    7400382: EscoroDoPrincipal|Cube.001Action.001
+    7400384: EscoroDoPrincipal|Cube.002Action
+    7400386: EscoroDoPrincipal|Cube.002Action.001
+    7400388: EscoroDoPrincipal|Cube.003Action
+    7400390: EscoroDoPrincipal|Cube.003Action.001
+    7400392: EscoroDoPrincipal|Cube.004Action
+    7400394: EscoroDoPrincipal|Cube.004Action.001
+    7400396: EscoroDoPrincipal|Cube.005Action
+    7400398: EscoroDoPrincipal|Cube.005Action.001
+    7400400: EscoroDoPrincipal|Cube.006Action
+    7400402: EscoroDoPrincipal|Cube.006Action.001
+    7400404: EscoroDoPrincipal|Cube.007Action
+    7400406: EscoroDoPrincipal|Cube.007Action.001
+    7400408: EscoroDoPrincipal|Cube.008Action
+    7400410: EscoroDoPrincipal|Cube.008Action.001
+    7400412: EscoroDoPrincipal|Cube.009Action
+    7400414: EscoroDoPrincipal|Cube.009Action.001
+    7400416: EscoroDoPrincipal|Cube.010Action
+    7400418: EscoroDoPrincipal|Cube.010Action.001
+    7400420: EscoroDoPrincipal|Cube.011Action
+    7400422: EscoroDoPrincipal|Cube.011Action.001
+    7400424: EscoroDoPrincipal|Cube.011Action.002
+    7400426: EscoroDoPrincipal|Cube.012Action
+    7400428: EscoroDoPrincipal|Cube.012Action.001
+    7400430: EscoroDoPrincipal|CubeAction
+    7400432: EscoroDoPrincipal|CubeAction.001
+    7400434: CuboPrincipal|Cube.001Action
+    7400436: CuboPrincipal|Cube.001Action.001
+    7400438: CuboPrincipal|Cube.002Action
+    7400440: CuboPrincipal|Cube.002Action.001
+    7400442: CuboPrincipal|Cube.003Action
+    7400444: CuboPrincipal|Cube.003Action.001
+    7400446: CuboPrincipal|Cube.004Action
+    7400448: CuboPrincipal|Cube.004Action.001
+    7400450: CuboPrincipal|Cube.005Action
+    7400452: CuboPrincipal|Cube.005Action.001
+    7400454: CuboPrincipal|Cube.006Action
+    7400456: CuboPrincipal|Cube.006Action.001
+    7400458: CuboPrincipal|Cube.007Action
+    7400460: CuboPrincipal|Cube.007Action.001
+    7400462: CuboPrincipal|Cube.008Action
+    7400464: CuboPrincipal|Cube.008Action.001
+    7400466: CuboPrincipal|Cube.009Action
+    7400468: CuboPrincipal|Cube.009Action.001
+    7400470: CuboPrincipal|Cube.010Action
+    7400472: CuboPrincipal|Cube.010Action.001
+    7400474: CuboPrincipal|Cube.011Action
+    7400476: CuboPrincipal|Cube.011Action.001
+    7400478: CuboPrincipal|Cube.011Action.002
+    7400480: CuboPrincipal|Cube.012Action
+    7400482: CuboPrincipal|Cube.012Action.001
+    7400484: CuboPrincipal|CubeAction
+    7400486: CuboPrincipal|CubeAction.001
+    7400488: prediopequeno|Cube.001Action
+    7400490: prediopequeno|Cube.001Action.001
+    7400492: prediopequeno|Cube.002Action
+    7400494: prediopequeno|Cube.002Action.001
+    7400496: prediopequeno|Cube.003Action
+    7400498: prediopequeno|Cube.003Action.001
+    7400500: prediopequeno|Cube.004Action
+    7400502: prediopequeno|Cube.004Action.001
+    7400504: prediopequeno|Cube.005Action
+    7400506: prediopequeno|Cube.005Action.001
+    7400508: prediopequeno|Cube.006Action
+    7400510: prediopequeno|Cube.006Action.001
+    7400512: prediopequeno|Cube.007Action
+    7400514: prediopequeno|Cube.007Action.001
+    7400516: prediopequeno|Cube.008Action
+    7400518: prediopequeno|Cube.008Action.001
+    7400520: prediopequeno|Cube.009Action
+    7400522: prediopequeno|Cube.009Action.001
+    7400524: prediopequeno|Cube.010Action
+    7400526: prediopequeno|Cube.010Action.001
+    7400528: prediopequeno|Cube.011Action
+    7400530: prediopequeno|Cube.011Action.001
+    7400532: prediopequeno|Cube.011Action.002
+    7400534: prediopequeno|Cube.012Action
+    7400536: prediopequeno|Cube.012Action.001
+    7400538: prediopequeno|CubeAction
+    7400540: prediopequeno|CubeAction.001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: CuboPrincipal
+    13700002: EscoroDoPrincipal
+    13700004: PredioGrande
+    13700006: predioGrande
+    13700008: predioGrande2
+    13700010: prediopequeno
+    13700012: predioTomba2
+    13700014: predioTomba3
+    13700016: predioTomba4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Apocalipse
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 152
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone_end
+        weight: 1
+      - path: Armature/Bone.001
+        weight: 1
+      - path: Armature/Bone.001/Bone.001_end
+        weight: 1
+      - path: Armature/Bone.002
+        weight: 1
+      - path: Armature/Bone.002/Bone.002_end
+        weight: 1
+      - path: Armature/Bone.004
+        weight: 1
+      - path: Armature/Bone.004/Bone.004_end
+        weight: 1
+      - path: Armature/Bone.005
+        weight: 1
+      - path: Armature/Bone.005/Bone.005_end
+        weight: 1
+      - path: Armature/Bone.006
+        weight: 1
+      - path: Armature/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Bone.007
+        weight: 1
+      - path: Armature/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Bone.010
+        weight: 1
+      - path: Armature/Bone.010/Bone.010_end
+        weight: 1
+      - path: Armature/Bone.012
+        weight: 1
+      - path: Armature/Bone.012/Bone.012_end
+        weight: 1
+      - path: CuboPrincipal
+        weight: 1
+      - path: EscoroDoPrincipal
+        weight: 1
+      - path: PredioGrande
+        weight: 1
+      - path: predioGrande
+        weight: 1
+      - path: predioGrande2
+        weight: 1
+      - path: prediopequeno
+        weight: 1
+      - path: predioTomba2
+        weight: 1
+      - path: predioTomba3
+        weight: 1
+      - path: predioTomba4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
