@@ -4,7 +4,7 @@ using System.Collections;
 public class ScrEasterEggLamp : MonoBehaviour {
 
     // Use this for initialization
-    private bool lampIsActive = true;
+    private bool lampIsActive = false;
     public Material materialLampEnabled;
     public Material materialLampDisabled;
     private GameObject hand;

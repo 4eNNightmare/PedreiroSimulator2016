@@ -22,4 +22,9 @@ public static class scrControls
     {
         return Input.GetKeyDown(KeyCode.E);
     }
+
+    public static bool mouseLeftDown()
+    {
+        return Input.GetMouseButtonDown(0);
+    }
 }

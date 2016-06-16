@@ -5,8 +5,10 @@ public class ScrEquipments : ScrTransportableBehaviour
 {
    void Update()
     {
+        if (!scrPlayerEquipments.equipMission)
+            base.catchSystem();
 		base.Update();//chama o update do Transportable
-		if (Input.GetKeyDown(KeyCode.E)){
+		if (scrControls.use()){
 			if (inHandObject != null) {
 				switch (inHandObject.name) {
 				case "capacete":

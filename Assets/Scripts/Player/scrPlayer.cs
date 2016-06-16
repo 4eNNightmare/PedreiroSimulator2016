@@ -29,7 +29,7 @@ public class scrPlayer : MonoBehaviour
 
         ExternalVars();
 
-        ChangeMoney();
+        
     }
 
     void Movement()
@@ -73,10 +73,11 @@ public class scrPlayer : MonoBehaviour
         mySpd = rb.velocity.magnitude;
     }
 
+    /*
     void ChangeMoney()
     {
         if (scrControls.use())
         CommonValues.MoneyManager.UpdateMoney(CommonValues.ADD,48.88f);
         
-    }
+    }*/
 }

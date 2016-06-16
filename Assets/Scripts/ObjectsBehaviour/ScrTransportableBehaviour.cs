@@ -60,18 +60,32 @@ public class ScrTransportableBehaviour : ScrObject
 
 	public void Update()
     {
-		delay += Time.deltaTime;
-		if(Input.GetMouseButtonDown(0) && hand.transform.childCount == 0 && targeted){
-			delay = 0;
-			Carry();
-            if (!wasCaught) wasCaught = true;
-		}
+		
 
-		if(delay > 0.25){
-			if(Input.GetMouseButtonDown(0) && hand.transform.childCount > 0){
-				Drop();
-			}
-		}
+        if (scrPlayerEquipments.equipMission)
+            catchSystem();
+        else if (scrControls.mouseLeftDown() && hand.transform.childCount == 0 && targeted)
+            CommonValues.MessageManager.DrawMsgBox("Você não pode manusear nenhum material até que esteja equipado!",CommonValues.ERROR);
+		
 	}
+
+    public void catchSystem()
+    {
+        delay += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0) && hand.transform.childCount == 0 && targeted)
+        {
+            delay = 0;
+            Carry();
+            if (!wasCaught) wasCaught = true;
+        }
+
+        if (delay > 0.25)
+        {
+            if (Input.GetMouseButtonDown(0) && hand.transform.childCount > 0)
+            {
+                Drop();
+            }
+        }
+    }
 }
 

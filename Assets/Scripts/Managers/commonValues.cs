@@ -11,6 +11,7 @@ public static class CommonValues {
 
     private static scrGameManager GameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<scrGameManager>();
     public static scrMoney MoneyManager = GameManager.GetComponent<scrMoney>();
+    public static scrMSG_Alert MessageManager = GameObject.FindGameObjectWithTag("gameGUI").GetComponent<scrMSG_Alert>();
    
     //Common Tag
     public const string tagTijolo = "matTijolo";
