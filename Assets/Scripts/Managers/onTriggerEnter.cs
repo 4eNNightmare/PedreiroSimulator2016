@@ -19,6 +19,7 @@ public class onTriggerEnter : MonoBehaviour
         && scrPlayerEquipments.capacete && scrPlayerEquipments.luvaDireita
         && scrPlayerEquipments.luvaEsquerda)
         {
+            scrPlayerEquipments.equipMission = true;
             GameObject.Find("Canvas").GetComponent<scrMSG_Alert>().DrawMsgBox("Parabéns você equipou os EPI's.", 0);
             CommonValues.MoneyManager.UpdateMoney(CommonValues.SUB, 10f);
             Destroy(this);

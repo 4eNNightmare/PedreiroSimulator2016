@@ -19,8 +19,8 @@ public static class CommonValues {
     public const string tagTriggers = "Triggers";
     
     //Money Common Pontuation
-    public static float _moneyFineTijolo = 2f, _moneyBreakTijolo = 5f;
-    public static float _moneyFineCimento = 5f, _moneyBreakCimento = 10f;
+    public static float _moneyFineTijolo = 5f, _moneyBreakTijolo = 5f;
+    public static float _moneyFineCimento = 10f, _moneyBreakCimento = 10f;
 
     public const byte REWARD = 0, PUNISH = 1;
 

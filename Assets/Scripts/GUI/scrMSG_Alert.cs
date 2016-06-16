@@ -33,7 +33,7 @@ public class  scrMSG_Alert : MonoBehaviour
 
 		case 1:
 			//warning
-			instancia.GetComponent<Image>().color = new Color(0.78f,0.39f,0.17f,1);
+			instancia.GetComponent<Image>().color = new Color(1f,0.85f,0.0f,1);
 			instancia.transform.FindChild("Icone").GetComponent<Image>().sprite = iconsAlert;
 			break;
 
