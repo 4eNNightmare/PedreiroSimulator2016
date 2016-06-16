@@ -36,7 +36,7 @@ public class scrGameManager:MonoBehaviour
     {
         
         //Start Game
-        gameCanvas.GetComponent<scrMSG_Alert>().DrawMsgBox("Pegue seus equipamentos de EPI", CommonValues.INFO);
+		gameCanvas.GetComponent<scrMSG_Alert>().DrawMsgBox("Equipe os EPI's e transporte os materiais para uma area segura. ", CommonValues.ALERT);
 
     }
 

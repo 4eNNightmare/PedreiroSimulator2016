@@ -13,6 +13,7 @@ public class scrPlayerEye : MonoBehaviour
     void Awake()
     {
         eye = Camera.main;
+		Cursor.lockState = CursorLockMode.Locked;
     }
 
     CursorLockMode cursorLock;
