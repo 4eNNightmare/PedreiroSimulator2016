@@ -8,11 +8,13 @@ public class ScrTransportableBehaviour : ScrObject
 	private float delay;
 	private GameObject hand;
 	public GameObject inHandObject;
+    public bool wasCaught = false; // check if gameObject was caught.
 
 
 
 
-	void Awake () {
+	void Awake ()
+    {
 		hand = GameObject.Find(CommonValues.handTranspStr);
 	}
 
@@ -20,6 +22,7 @@ public class ScrTransportableBehaviour : ScrObject
 
 	private void Carry(){
         Highlight(this.gameObject, new Color(0,0,0,0));
+        GetComponent<Rigidbody>().useGravity = false;
 		GetComponent<Rigidbody>().isKinematic = true;
 		GetComponent<Rigidbody>().detectCollisions = false;
 		carryPosition = hand.transform.position;
@@ -29,9 +32,10 @@ public class ScrTransportableBehaviour : ScrObject
 	}
 
 	private void Drop(){
-		GetComponent<Rigidbody>().isKinematic = false;
-		GetComponent<Rigidbody>().detectCollisions = true;
-		transform.SetParent(null);
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Rigidbody>().detectCollisions = true;
+        transform.SetParent(null);
 		inHandObject = null;
         
 	}
@@ -60,6 +64,7 @@ public class ScrTransportableBehaviour : ScrObject
 		if(Input.GetMouseButtonDown(0) && hand.transform.childCount == 0 && targeted){
 			delay = 0;
 			Carry();
+            if (!wasCaught) wasCaught = true;
 		}
 
 		if(delay > 0.25){

@@ -11,4 +11,40 @@ public static class CommonValues {
 
     private static scrGameManager GameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<scrGameManager>();
     public static scrMoney MoneyManager = GameManager.GetComponent<scrMoney>();
+   
+    //Common Tag
+    public const string tagTijolo = "matTijolo";
+    public const string tagCimento = "matCimento";
+    public const string tagTriggers = "Triggers";
+    
+    //Money Common Pontuation
+    public static float _moneyFineTijolo = 2f, _moneyBreakTijolo = 5f;
+    public static float _moneyFineCimento = 5f, _moneyBreakCimento = 10f;
+
+    public const byte REWARD = 0, PUNISH = 1;
+
+
+
+    public static void moneyReward(string tag, byte reward)
+    {
+        switch(tag)
+        {
+            case tagCimento:
+                    if (reward == REWARD)
+                        MoneyManager.UpdateMoney(ADD, _moneyFineCimento);
+                    else
+                        MoneyManager.UpdateMoney(SUB, _moneyBreakCimento);
+                break;
+
+            case tagTijolo:
+                if (reward == REWARD)
+                    MoneyManager.UpdateMoney(ADD, _moneyFineTijolo);
+                else
+                    MoneyManager.UpdateMoney(SUB, _moneyBreakTijolo);
+                break;
+
+            default: Debug.LogError("Invalid Tag and/or reward in CommonValues"); break;
+        }
+    }
+
 }

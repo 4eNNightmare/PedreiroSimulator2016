@@ -20,11 +20,37 @@ public class BrokenObject : MonoBehaviour {
         if (col.gameObject.GetComponent<Rigidbody>() != null)
         {
             velocityImpact = +col.gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+            
         }
+
         if (velocityImpact > MaxImpactForce)
         {
             Instantiate(breakBreaked, transform.position, transform.rotation);
+            CommonValues.moneyReward(this.gameObject.tag, CommonValues.PUNISH);
             Destroy(this.gameObject);
         }
+
+        if (GetComponent<ScrTransportableBehaviour>().wasCaught == true)
+            onGround = true;
+        
     }
+
+
+    //REWARD SYSTEM
+    public bool rewarded = false, onGround = false;
+
+    void OnTriggerStay(Collider collider)
+    {
+
+        if (collider.tag == CommonValues.tagTriggers && onGround)
+        {
+            if (!rewarded)
+            {
+                CommonValues.moneyReward(this.gameObject.tag, CommonValues.REWARD);
+                rewarded = true;
+            }
+        }
+    }
+
+
 }
