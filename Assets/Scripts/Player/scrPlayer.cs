@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 //RequireComponents
 [RequireComponent( typeof(Rigidbody) )]
@@ -29,7 +30,9 @@ public class scrPlayer : MonoBehaviour
 
         ExternalVars();
 
-        
+        Restart();
+
+
     }
 
     void Movement()
@@ -80,4 +83,12 @@ public class scrPlayer : MonoBehaviour
         CommonValues.MoneyManager.UpdateMoney(CommonValues.ADD,48.88f);
         
     }*/
+
+    void Restart()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Intro");
+        }
+    }
 }

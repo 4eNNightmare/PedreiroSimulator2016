@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class scrGameManager:MonoBehaviour
 {
     public GameObject player;
@@ -44,5 +45,4 @@ public class scrGameManager:MonoBehaviour
     {
         moneyManager = GetComponent<scrMoney>();
     }
-
 }
