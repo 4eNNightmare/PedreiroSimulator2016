@@ -11,8 +11,9 @@ public class  scrMSG_Alert : MonoBehaviour
 	[SerializeField]private Sprite iconsCheck;
 	[SerializeField]private Sprite iconsAlert;
 	[SerializeField]private Sprite iconsError;
+    
 
-	void Awake()
+    void Awake()
     {
 		c = GetComponent<Canvas>();
 	}
@@ -23,8 +24,9 @@ public class  scrMSG_Alert : MonoBehaviour
     {
 		GameObject instancia = Instantiate(msgBox) as GameObject;
 		instancia.transform.SetParent(c.transform);
+        
 
-		switch (type){
+        switch (type){
 		case 0:
 			//normal
 			instancia.GetComponent<Image>().color = new Color(0.23f,0.78f,0.17f,1);
@@ -45,7 +47,16 @@ public class  scrMSG_Alert : MonoBehaviour
 
 		}
 		instancia.GetComponentInChildren<Text>().text = msg;
-		msgBoxPos = new Vector3(0,c.GetComponent<RectTransform>().rect.height, 0);
-		instancia.GetComponent<RectTransform>().position = msgBoxPos;
+		msgBoxPos = new Vector3(c.GetComponent<RectTransform>().rect.width/2 - instancia.GetComponent<RectTransform>().rect.width / 2, c.GetComponent<RectTransform>().rect.height-20, 0);
+        RectTransform instanciaTamanho = instancia.transform.FindChild("BackGround").GetComponent<RectTransform>();
+       // Debug.Log("Antes " + instancia.transform.FindChild("BackGround").GetComponent<RectTransform>().rect.height + "  letras " + instancia.GetComponentInChildren<Text>().text.Length);
+        if (instancia.GetComponentInChildren<Text>().text.Length > 80)
+        {
+            Debug.Log("entrou");
+            instanciaTamanho.sizeDelta = new Vector2(instanciaTamanho.sizeDelta.x, instanciaTamanho.sizeDelta.y + 20);
+            instanciaTamanho.position = new Vector3(instanciaTamanho.position.x, instanciaTamanho.position.y - 10, 0);
+        }
+        //Debug.Log("Depois " + instancia.transform.FindChild("BackGround").GetComponent<RectTransform>().rect.height);
+        instancia.GetComponent<RectTransform>().position = msgBoxPos;
 	}
 }
