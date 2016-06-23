@@ -10,11 +10,11 @@ public class ScrApocalipse : MonoBehaviour {
 
     void OnMouseOver()
     {
-        GameObject.Find("BotaoRed").GetComponent<Renderer>().material = ButtonOver;
+        transform.FindChild("BotaoRed").GetComponent<Renderer>().material = ButtonOver;
     }
     void OnMouseExit()
     {
-        GameObject.Find("BotaoRed").GetComponent<Renderer>().material = ButtonNormal;
+        transform.FindChild("BotaoRed").GetComponent<Renderer>().material = ButtonNormal;
     }
     void OnMouseDown()
     {
