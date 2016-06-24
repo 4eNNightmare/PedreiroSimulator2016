@@ -27,6 +27,7 @@ public class BrokenObject : MonoBehaviour {
         {
             Instantiate(breakBreaked, transform.position, transform.rotation);
             CommonValues.moneyReward(this.gameObject.tag, CommonValues.PUNISH);
+            CommonValues.MessageManager.DrawMsgBox("Você estragou esse material. Manusei com cuidado, os materiais devem ser guardados em segurança.", CommonValues.ERROR);
             Destroy(this.gameObject);
         }
 

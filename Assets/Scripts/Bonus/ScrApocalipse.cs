@@ -20,6 +20,7 @@ public class ScrApocalipse : MonoBehaviour {
     {
         predios.GetComponent<Animator>().SetTrigger("Apocalipse");
         Instantiate(Particulas, predios.transform.position, predios.transform.rotation);
+        CommonValues.MessageManager.DrawMsgBox("Parabéns senhor curioso, acabou de destruir a cidade... bom, terá muito trabalho agora :)", CommonValues.EGG);
         Destroy(this);
     }
     //void Update() {

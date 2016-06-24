@@ -6,7 +6,7 @@ public static class CommonValues {
 	public static Color tranportableHLColor = new Color(0,1,0,1);
 	public static Color nonTranportableHLColor = new Color(0,0,1,1);
 	public static float maxGrabRange = 2;
-    public const int INFO=0,ALERT = 1, ERROR = 2;
+    public const int INFO=0,ALERT = 1, ERROR = 2, EGG = 3;
     public const byte ADD = 0, SUB = 1, MULT = 2, DIV = 3;
 
     private static scrGameManager GameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<scrGameManager>();

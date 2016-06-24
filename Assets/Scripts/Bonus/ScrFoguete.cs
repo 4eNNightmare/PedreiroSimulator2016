@@ -19,6 +19,7 @@ public class ScrFoguete : MonoBehaviour {
     void OnMouseDown()
     {
         Instantiate(foguete, GameObject.Find("InstanciaFoguete").transform.position, GameObject.Find("InstanciaFoguete").transform.rotation);
+        CommonValues.MessageManager.DrawMsgBox("Parabéns senhor curioso, você lançou um foguete da nas... Ih! E acho que isso vai dar zebra!", CommonValues.EGG);
         Destroy(this);
     }
     //void Update() {
